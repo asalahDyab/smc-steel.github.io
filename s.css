@@ -1,0 +1,363 @@
+body {
+    font-family: Bodoni MT, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 ;
+
+
+}
+
+header {
+display: flex;
+    background-color: #FFFFFF;
+    color: #013220;
+    padding: 20px 0;
+    
+}
+
+
+        .header-left {
+            width: 25%;
+            background: #FFFFFF; /* Background color for the image part */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+	Padding-left:30px;
+        }
+
+        /* Style for the right (title) part */
+        .header-right {
+            width: 75%;
+            background: #FFFFFF; /* Background color for the title part */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align title to the left */
+Padding-right:200px;
+             
+        }
+
+        /* Style for the image within the left part */
+        .header-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Style for the title text within the right part */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Change alignment as needed */
+ background-color:#474545;
+}
+
+nav ul li {
+    border:8px solid #474545; /* Add a border with desired styles */
+
+border-right-width:30px;
+border-left-width:30px;
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Add a box shadow with desired settings */
+     /* Adjust spacing between items */
+    position: relative;
+        font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    font-size:16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+    animation: bounce 0.5s ease infinite;
+}
+
+.menu{
+
+   background-color: #474545;
+}
+section {
+    padding: 30px 0;
+}
+
+#home {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top:-20px;
+    margin-top:-10px;
+    margin-bottom: -20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#about {
+    background-color: #ddd;
+     margin-top: -500px;
+}
+
+#products {
+    background-color: #f0f0f0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#services {
+    background-color: #ddd;
+}
+
+#contact {
+    background-color: #f0f0f0;
+}
+
+footer {
+    font-size:12px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add this animation rule */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the title */
+#logo-title {
+    font-size: 40px;
+font-weight: bold;
+    text-decoration: none;
+    color: #0b6e34;
+
+    animation: pulse 2s ease-in-out 1;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+color:#0b6e34;
+    
+}
+
+.words{
+color:#0b6e34;
+	Padding-left:40px;
+}
+
+#logo-image {
+    float: left;
+    max-width: 150px;
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+#slider {
+    background-color: #f0f0f0;
+ margin-top: -80px; 
+margin-bottom: 0; 
+z-index: 2; 
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+   
+}
+
+.slide {
+    flex: 0 0 100vw;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 40%;
+}
+
+
+
+.image-zoom {
+    animation: zoomIn 8s linear infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+        .logoimg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px; /* Add spacing around the logo */
+        }
+
+        /* Additional styles for the logo image */
+        .logoimg img {
+            width: 30%; /* Set the width of your logo to 30% of the viewport width */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+#logo-image {
+    max-width: 300px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing to the right of the logo */
+
+
+}
+
+footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for the horizontal section */
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    background-color: #454545;
+padding-left:50px;
+padding-right:50px;
+color:#FFFFF7;
+   
+
+
+}
+
+
+.footer-horizontal {
+    flex-basis: 100%; /* Full width for horizontal section */
+    text-align: center;
+ background-color: #333;
+}
+
+
+footer a {
+    color: #FFFFF7; /* Change the color to red (you can use any valid color value) */
+    text-decoration: none; /* Remove underlines (optional) */
+}
+
+/* Change the color of anchor elements on hover */
+footer a:hover {
+    color: #ff8c00; /* Change the color to green on hover (you can use any valid color value) */
+}
+
+.footer-quick-links-container {
+    border-top: 1px solid #FFFFF7; /* Change the color and style as needed */
+    padding-top: 10px; /* Add some spacing between the heading and links */
+}
+
+.image-pair {
+
+    display: flex;  /* Use flexbox to place images in a row */
+    justify-content: space-between;  /* Create space between the images */
+    margin-bottom: 20px;  /* Add some space between pairs */
+}
+
+.image-pair a {
+    flex: 1;  /* Make each image within a pair take up an equal amount of space */
+}
+
+
+        .custom-container {
+            display: flex;
+padding-right: 30px;
+padding-bottom: 20px;
+    background-color: #f0f0f0;
+
+        }
+
+        .custom-section {
+            width: 50%;
+            display: flex;
+padding-left: 30px;
+        }
+
+        .custom-text {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .custom-image {
+            width: 40%;
+            background-size: cover;
+        }
+
+
+  .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .steel-service {
+            width: 40%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .steel-service:hover {
+            transform: scale(1.05);
+        }

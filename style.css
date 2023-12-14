@@ -1,0 +1,37 @@
+
+        .header-left {
+            width: 25%;
+            background: #FFFFFF; /* Background color for the image part */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+	Padding-left:30px;
+        }
+
+        /* Style for the right (title) part */
+        .header-right {
+            width: 75%;
+            background: #FFFFFF; /* Background color for the title part */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Align title to the left */
+Padding-right:200px;
+             
+        }
+
+        /* Style for the image within the left part */
+        .header-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Style for the title text within the right part */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
